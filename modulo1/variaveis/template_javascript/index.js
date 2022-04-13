@@ -11,54 +11,44 @@
 
 //Exercícios de escrita de código
 
-//1- 
+//1-
 
-prompt ("Meu nome é?")
+prompt  ( "Meu nome é?" )
 
-console.log (prompt ("Meu sobrenome é?") )
-
-
+console.log( prompt  ( "Meu sobrenome é?" )  )
 
 
-const novaVariavel = 80
 
 
-let idade = 23
-console.log( idade, novaVariavel )
+const  novaVariavel  =  80
 
-idade = 21
-idade = 22
 
-const nome = "Vitória"
-const Idade = 22
+let  idade  =  23
+console.log(  idade , novaVariavel )  
 
-console.log("Olá", "Meu nome é", nome, "e eu tenho", Idade, "anos")
+idade  =  21
+idade  =  22
+
+const  nome  =  "Vitória"
+const  Idade  =  22
+
+console.log( "Olá" ,  "Meu nome é" ,  nome ,  "e eu tenho" ,  Idade ,  "anos" )
 
 //2-
 
-let euEstoudePreto = true
-let euSouHomem = false
-let euSouMulher = true
+let  euEstoudePreto  =  true
+let  euSouHomem  =  false
+let  euSouMulher  =  true
 
-console.log(euEstoudePreto, euSouHomem, euSouMulher)
-
-
-//3- 
-
-let a = 10
-let b = 25
-let c = 0
-
-console.log("O novo valor de a é", 25)
-console.log("O novo valor de b é", 10)
-console.log("O novo valor de c é", 0)
+console.log( euEstoudePreto ,  euSouHomem ,  euSouMulher )
 
 
+//3-
 
+let  a  =  10
+let  b  =  25
+let  c  =  0
 
-
-
-
-
-
-
+console.log( "O novo valor de a é" ,  25 )
+console.log( "O novo valor de b é" ,  10 )
+console.log( "O novo valor de c é" ,  0 )

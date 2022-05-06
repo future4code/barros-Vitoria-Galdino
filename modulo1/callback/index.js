@@ -58,6 +58,14 @@
 // })
 
 // B.
+// function mapear(produto) {
+//     let precoDesconto =produto.preco-(produto.preco*0.05)
+//     return {"nome":produto.nome, "preço":precoDesconto.toFixed(2)}
+//     }
+    
+//     let novoArray=produtos.map(mapear)
+    
+//     console.log(novoArray)
 
 // C.
 // const bebidas = produtos.filter ((produtos, indice, array) => {

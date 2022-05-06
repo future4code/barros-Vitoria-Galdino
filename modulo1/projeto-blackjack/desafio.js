@@ -17,7 +17,7 @@
 //     let usuarioDesafio = []
 //     let maquina = []
 
-// if(confirm("Bem-vinde ao jogo de Blackjack!" + "\n" + "Quer iniciar uma nova rodada?")){
+// if(confirm("Bem-vindo(a) ao jogo de Blackjack!" + "\n" + "Quer iniciar uma nova rodada?")){
 
   
 //    let cartasOk = false

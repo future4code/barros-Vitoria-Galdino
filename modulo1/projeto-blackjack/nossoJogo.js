@@ -12,32 +12,32 @@
 //  */ 
 // 
  
- console.log("Boas vindas ao jogo Blackjack!")
+//  console.log("Boas vindas ao jogo Blackjack!")
 
- let mensagem = confirm("Quer iniciar uma nova rodada?")
+//  let mensagem = confirm("Quer iniciar uma nova rodada?")
 
- if (mensagem) {
-   let cartaUsuario1 = comprarCarta()
-   let cartaUsuario2 = comprarCarta()
-   let cartaComputador = comprarCarta()
-   let cartaComputador2 = comprarCarta()
+//  if (mensagem) {
+//    let cartaUsuario1 = comprarCarta()
+//    let cartaUsuario2 = comprarCarta()
+//    let cartaComputador = comprarCarta()
+//    let cartaComputador2 = comprarCarta()
 
-   let pontuacaoUsuario = cartaUsuario1.valor + cartaUsuario2.valor
-   let pontuacaoComputador = cartaComputador.valor + cartaComputador2.valor
+//    let pontuacaoUsuario = cartaUsuario1.valor + cartaUsuario2.valor
+//    let pontuacaoComputador = cartaComputador.valor + cartaComputador2.valor
 
-   console.log(`Usuário - cartas: ${cartaUsuario1.texto} ${cartaUsuario2.texto} - ${pontuacaoUsuario}`)
-   console.log(`Computador - cartas: ${cartaComputador.texto} ${cartaComputador2.texto} - ${pontuacaoComputador}`)
+//    console.log(`Usuário - cartas: ${cartaUsuario1.texto} ${cartaUsuario2.texto} - ${pontuacaoUsuario}`)
+//    console.log(`Computador - cartas: ${cartaComputador.texto} ${cartaComputador2.texto} - ${pontuacaoComputador}`)
 
-   if (pontuacaoUsuario > pontuacaoComputador) {
-       console.log("O usuário ganhou!")
-   } else if (pontuacaoComputador > pontuacaoUsuario) {
-       console.log("O computador ganhou!")
-   } else if (pontuacaoUsuario === pontuacaoComputador) {
-       console.log("Empate!")
-   }
+//    if (pontuacaoUsuario > pontuacaoComputador) {
+//        console.log("O usuário ganhou!")
+//    } else if (pontuacaoComputador > pontuacaoUsuario) {
+//        console.log("O computador ganhou!")
+//    } else if (pontuacaoUsuario === pontuacaoComputador) {
+//        console.log("Empate!")
+//    }
 
-} else {
-   console.log("O jogo acabou")
-}
+// } else {
+//    console.log("O jogo acabou")
+// }
 
 

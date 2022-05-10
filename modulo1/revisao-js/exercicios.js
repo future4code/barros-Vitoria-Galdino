@@ -20,7 +20,8 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+   
+
 }
 
 // EXERCÍCIO 05
@@ -30,7 +31,20 @@ function retornaNumerosParesElevadosADois(array) {
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+    
+    let maiorNumero = 0
+    
+    for(let posicao = 0; posicao < array.length; posicao++) {
+        let numeroDoArray = array[posicao]
+    
+      if(numeroDoArray > maiorNumero) {
+         maiorNumero = numeroDoArray
+    
+            }
+    
+        }
+         
+    return maiorNumero
 }
 
 // EXERCÍCIO 07

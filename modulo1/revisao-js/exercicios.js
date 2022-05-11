@@ -10,12 +10,12 @@ function retornaTamanhoArray(array) {
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
-    
+    return array.reverse()
 }
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-  
+    return array.sort((a, b) => a - b)
 }
 
 // EXERCÍCIO 04
@@ -69,8 +69,20 @@ function retornaSegundoMaiorESegundoMenor(array) {
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+   const filme1 = {
+        nome:'O Diabo Veste Prada',
+        ano: 2006,
+        diretor:'David Frankel',
+        atores:['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+       
+    }
+    
+return `Venha assistir ao filme ${filme1.nome}, de ${filme1.ano}, dirigido por ${filme1.diretor} e estrelado por ${filme1.atores[0]}, ${filme1.atores[1]}, ${filme1.atores[2]}, ${filme1.atores[3]}.`
+       
+ 
 }
+
+
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {

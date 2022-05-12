@@ -113,7 +113,7 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-    
+   
 }
 
 // EXERCÍCIO 11
@@ -127,25 +127,38 @@ function retornaChamadaDeFilme(filme) {
     }
     
 return `Venha assistir ao filme ${filme1.nome}, de ${filme1.ano}, dirigido por ${filme1.diretor} e estrelado por ${filme1.atores[0]}, ${filme1.atores[1]}, ${filme1.atores[2]}, ${filme1.atores[3]}.`
-       
- 
+        
 }
-
-
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
-   
+   let pessoaAnonima = {
+       ...pessoa,
+       nome: "ANÔNIMO",
+   }
+   return pessoaAnonima
 }
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+   const autorizado = []
+   for(let pessoa of pessoas) {
+       if((pessoa.idade > 14 && pessoa.idade < 60) && pessoa.altura >= 1.5) {
+           autorizado.push(pessoa)
+       }
+   }
+   return autorizado
 }
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+    const naoAutorizado = []
+    for(let pessoa of pessoas) {
+        if((pessoa.idade <= 14 || pessoa.idade >= 60) || pessoa.altura <= 1.5) {
+            naoAutorizado.push(pessoa)
+        }
+    }
+    return naoAutorizado
 }
 
 // EXERCÍCIO 14

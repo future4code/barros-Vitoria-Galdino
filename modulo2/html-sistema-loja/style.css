@@ -1,0 +1,28 @@
+h1 {
+    background-color: coral;
+    text-align: center;
+    font-size: 50px;
+}
+
+img {
+    display: inline;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 25%;
+    margin: 20px 0 0 20px;
+}
+
+body {
+    background-color: bisque;
+    text-align: center;
+}
+
+h3 {
+    text-align: left;   
+    padding: 50px 80px
+}
+
+#Endereço {
+    text-align: left;
+    margin-top: -5%;
+}

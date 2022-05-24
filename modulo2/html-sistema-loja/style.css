@@ -18,11 +18,49 @@ body {
 }
 
 h3 {
-    text-align: left;   
-    padding: 50px 80px
+    color: orangered;
+    text-align: center;   
+    padding: 150px 0 50px 0
 }
 
 #Endereço {
-    text-align: left;
+    text-align: center;
     margin-top: -5%;
+    font-size: 20px;
+    color: black;
+}
+
+p {
+    color: orangered;
+    font-size: 40px;
+}
+
+#Espaço {
+    padding-left: 40px;
+}
+
+.livro {
+    padding: 10px 30px 70px 45px;
+}
+
+#distancia {
+    padding: 30px 0 30px 0;
+}
+
+#trabalhadores {
+    text-align: left;
+    padding-top: 50px;
+}
+
+.nomes {
+    text-align: left;
+}
+
+.alinhamento {
+   margin-left: 50px;
+}
+
+#alinhar {
+   margin-left: -2px ;
+   padding-right: 5px;
 }

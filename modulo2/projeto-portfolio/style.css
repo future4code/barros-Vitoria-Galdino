@@ -5,6 +5,10 @@ body {
     background-size: cover;
 }
 
+header {
+    position:sticky;   
+}
+
 h1,
 p {
     text-align: center;
@@ -25,12 +29,11 @@ nav {
 
 footer {
     text-align: center;
-    padding-top: 480px;
-    margin-bottom: 880px;
+    display:flexbox  
 }
 
 #insta,
-#gmail {
+#github {
     border: 1px solid;
     border-radius: 50%;
     padding: 20px;
@@ -45,9 +48,9 @@ footer {
     cursor: pointer;   
 }
 
-#gmail:active {
+#github:active {
     width: 100px;
-    background-color: white;
+    background-color: black;
     cursor: pointer;
 }
 
@@ -73,6 +76,53 @@ h4 {
     font-size: 30px;
     text-align: center;
 }
+
+.tamanho {
+   border: none;
+   background: none;    
+}
+
+h3 {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    
+}
+
+p.blackjack {
+    background-color: white;
+    font-size: 20px;
+}
+
+img.jogo {
+    margin: -150px -20px -40px -80px ;
+    padding-left: 300px;
+}
+
+#desafio {
+    color: black;
+    font-size: 40px;    
+}
+
+h5 {
+    text-align: center;
+    color: white;
+    background-color: grey;
+    font-size: 40px;
+    margin-top: 200px;
+}
+
+.altura {
+    padding-top: 280px;
+}
+
+.alturaProjeto {
+    padding-bottom: 400px;
+}
+
+
 
 
   

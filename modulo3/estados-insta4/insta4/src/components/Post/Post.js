@@ -8,14 +8,14 @@ import iconeComentario from '../../img/comment_icon.svg'
 import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
 
 
-
 function Post(props){
-  const [state, setState] = useState({
+  
+  /*const [state, setState] = useState({
     curtido: false,
     numeroCurtidas: 0,
     comentando: false,
     numeroComentarios: 0
-  })
+  })*/
 
   const [numeroCurtidas, setnumeroCurtidas] = useState (0)
   const [curtido, setCurtido] = useState(false)
@@ -23,8 +23,16 @@ function Post(props){
   const [numeroComentarios, setNumeroComentarios] = useState(0)
 
   const onClickCurtida = () => {
+    (setCurtido(!curtido))
+    if (curtido === false) {
+      {setnumeroCurtidas(numeroCurtidas + 1)}
+    }else{
+      {setnumeroCurtidas(numeroCurtidas - 1)}
+     
     console.log('Curtiu!')
   }
+
+}
   
   const onClickComentario = () => {
     setComentando(!comentando)
@@ -59,14 +67,14 @@ function Post(props){
         <img className = 'UserPhoto' src={props.fotoUsuario} alt={'Imagem do usuario'}/>
         <p>{props.nomeUsuario}</p>
       </div>
-
+      
       <img className = 'PostPhoto'src={props.fotoPost} alt={'Imagem do post'}/>
 
       <div className = 'PostFooter'>
         <IconeComContador
           icone={iconeCurtida}
           onClickIcone={onClickCurtida}
-          valorContador={state.numeroCurtidas}
+          valorContador={numeroCurtidas}
         />
 
         <IconeComContador
@@ -75,8 +83,10 @@ function Post(props){
           valorContador={numeroComentarios}
         />
       </div>
+
       {componenteComentario}
     </div>
+    
   )
 }
 

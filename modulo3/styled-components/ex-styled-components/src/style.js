@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 export const Cabecalho = styled.header`
     display: flex;
-    background-color: white;
-    color: black;
     justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
     align-items: center;
-`
+    p {
+      font-size: 40px;
+      font-weight: bolder;
+    }
+  `
+
 export const Rodape = styled.footer`
   background: gray;
   color: white;
@@ -19,19 +20,21 @@ export const Rodape = styled.footer`
   padding: 0 10px;
   justify-content: center;
 `
-export const Colunas = styled.div`
-  background-color: white;
-`
-export const ColunaE = styled.div`
-  background-color: orange;
-  min-height: 100vh;
-  display: grid;
-  width: 130px;
-`
-export const ColunaD = styled.div `
-  background-color: orange;
-  min-height: 100vh;
-  display: grid;
-  width: 130px;
-  
+export const Pagina=styled.aside`
+  background-color: pink;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  aside{
+    background-color: orange;
+    width: 20%;
+    height: 700px;
+  }
+  main{
+    background-color: white;
+    width: 60%;
+  }
 `

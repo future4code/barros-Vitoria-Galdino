@@ -1,15 +1,15 @@
 import React from "react";
-import {ColunaE} from '../style'
-import {ColunaD} from '../style'
-import {Colunas} from '../style'
+import {Pagina} from '../style'
+
 
 
 const Principal=()=>{
     return (
-    <Colunas>
-        <ColunaE/>
-        <ColunaD/>
-    </Colunas>
+    <Pagina>
+        <aside/>
+        <main/>
+        <aside/>
+    </Pagina>
     );
 }
 

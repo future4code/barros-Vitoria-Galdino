@@ -4,31 +4,22 @@ export const Cabecalho = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
-    p {
-      font-size: 40px;
-      font-weight: bolder;
+    img {
+     width: 50px;
+     height: 50px;
     }
+  
   `
 
-export const Rodape = styled.footer`
-  background: gray;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  padding: 0 10px;
-  justify-content: center;
-`
-export const Pagina=styled.aside`
-  background-color: pink;
+export const Pagina=styled.section`
+  background-color: white;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   padding: 0;
   margin: 0;
 
-  aside{
+  section{
     background-color: orange;
     width: 20%;
     height: 700px;
@@ -37,4 +28,22 @@ export const Pagina=styled.aside`
     background-color: white;
     width: 60%;
   }
+`
+export const Formulario=styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 40px;
+    padding: 0 20px;
+`
+
+export const Rodape = styled.footer`
+  background: gray;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
 `

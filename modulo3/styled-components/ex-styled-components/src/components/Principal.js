@@ -6,9 +6,9 @@ import {Pagina} from '../style'
 const Principal=()=>{
     return (
     <Pagina>
-        <aside/>
+        <section/>
         <main/>
-        <aside/>
+        <section/>
     </Pagina>
     );
 }

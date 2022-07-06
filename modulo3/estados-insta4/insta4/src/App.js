@@ -1,15 +1,18 @@
 import React from 'react';
 import Post from './components/Post/Post';
+import InstaFour from './components/InstaFour/InstaFour.js';
 import Perfil from './img/perfil-vitoria.jpeg';
 import Perfil2 from './img/perfil2-vitoria.jpeg';
 import Oceano from './img/oceano.jpg';
 import Ceu from './img/ceu.webp';
-import './style.css'
+import {Container} from './style';
 
 
 function App() {
 return(
-  <div className='MainContainer'>
+  <Container>
+           <InstaFour/>
+
            <Post
             nomeUsuario={'Paulinha'}
             fotoUsuario={'https://picsum.photos/50/50'}
@@ -25,10 +28,7 @@ return(
             fotoUsuario={Perfil2}
             fotoPost={Ceu}
           />
-  </div>
-
-  
-   
+  </Container>  
 )
 
 }

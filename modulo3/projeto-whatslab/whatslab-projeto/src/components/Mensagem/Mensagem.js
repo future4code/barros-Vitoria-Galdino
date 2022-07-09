@@ -1,7 +1,22 @@
 import React, {useState} from 'react';
 import {Formulario} from '../../style'
+import {Usuario} from '../../style'
 
 const Mensagem=()=>{
+
+const [usuario, setUsuario]=useState([
+    {nome:"", msg:""}
+])
+
+const usuario2 = usuario.map((item,index)=>{
+      return(
+        <Usuario key={index}>
+            <p>{item.nome}</p>
+            <p>{item.msg}</p>
+            <button onClick={()=>remover(index)}>X</button>
+        </Usuario>
+      )
+})
 
 const[inputRemetente, setInputRemetente]=useState("");
 const[inputMensagem, setInputMensagem]=useState("")
@@ -16,12 +31,24 @@ const mudaMensagem=(event)=>{
     console.log(inputMensagem)
 }
 
-const enviar=()=>{
+const enviar=(event)=>{
+    event.preventDefault()
+    const boxAtualizada = [...usuario,{nome:inputRemetente, msg:inputMensagem}]
+    setUsuario(boxAtualizada)
     console.log("Mensagem enviada!")
+    setInputRemetente("")
+    setInputMensagem("")
 }
 
+const remover=(indexRemover)=>{
+    const boxAtualizada=usuario.filter((item, index)=>{
+        return index !== indexRemover;
+    })
+    setUsuario(boxAtualizada)
+}
     return(
-        <Formulario>
+        <>
+        <Formulario action="">
           <div>
             <input type='text' required placeholder='Remetente' value={inputRemetente} onChange={mudaRemetente}></input>
             <input type='text' required placeholder='Mensagem' value={inputMensagem} onChange={mudaMensagem}></input>
@@ -29,6 +56,11 @@ const enviar=()=>{
           </div>
         </Formulario>
 
+        <div>
+          {usuario2}
+          </div>
+        </>
+        
     );
 }
 

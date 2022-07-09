@@ -1,11 +1,14 @@
 import React from 'react';
 import {PaginaP} from '../style';
+import Formulario from '../components/Mensagem/Mensagem';
 
 const Main=()=>{
     return(
         <PaginaP>
             <aside/>
-            <main/>
+            <main>
+                <Formulario/>
+            </main>
             <aside/>
         </PaginaP>
     );

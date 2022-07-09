@@ -55,3 +55,8 @@ button{
     border-radius: 1px solid black;
 }
 `
+export const Usuario=styled.div`
+   display: flex;
+   justify-content: flex-end;
+   padding-top: 40px;
+`

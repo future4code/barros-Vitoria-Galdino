@@ -3,7 +3,7 @@ import {Formulario} from '../../style'
 import {Usuario} from '../../style'
 
 const Mensagem=()=>{
-
+ 
 const [usuario, setUsuario]=useState([
     {nome:"", msg:""}
 ])
@@ -11,9 +11,9 @@ const [usuario, setUsuario]=useState([
 const usuario2 = usuario.map((item,index)=>{
       return(
         <Usuario key={index}>
-            <p>{item.nome}</p>
-            <p>{item.msg}</p>
-            <button onClick={()=>remover(index)}>X</button>
+            <p><b>{item.nome}</b></p>
+            <p>: {item.msg}</p>
+            <button onDoubleClick={()=>remover(index)}>X</button>  
         </Usuario>
       )
 })
@@ -46,14 +46,15 @@ const remover=(indexRemover)=>{
     })
     setUsuario(boxAtualizada)
 }
+
     return(
         <>
         <Formulario action="">
-          <div>
+            <div>
             <input type='text' required placeholder='Remetente' value={inputRemetente} onChange={mudaRemetente}></input>
             <input type='text' required placeholder='Mensagem' value={inputMensagem} onChange={mudaMensagem}></input>
             <button onClick={enviar}>Enviar</button>
-          </div>
+            </div>
         </Formulario>
 
         <div>

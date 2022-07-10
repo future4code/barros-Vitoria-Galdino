@@ -5,6 +5,8 @@ export const Cabecalho=styled.header`
    justify-content: center;
    justify-items: center;
    align-items: center;
+   padding: 0;
+   margin: 0;
    h1{
     font-size: 40px;
     font-weight: bolder;
@@ -23,10 +25,14 @@ export const PaginaP=styled.aside`
   margin: 0;
   aside{
     background-color: orange;
+    margin: 0;
+    padding: 0;
     width: 20%;
     height: 550px;
   }
   main{
+    margin: 0;
+    padding: 0;
     background-color: white;
     width: 80%;
   }
@@ -36,8 +42,10 @@ export const Rodape=styled.footer`
   justify-content: center;
   position: relative;
   p{
-    padding-bottom: 70px;
-    font-size: 15px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-size: 25px;
     color: black;
     font-weight: bolder;
 } 
@@ -45,11 +53,15 @@ export const Rodape=styled.footer`
 export const Formulario=styled.form`
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: -526px;
+  justify-items: left;
+  background-color: orange;
+input{
+  display: inline-flex;
+  justify-content: space-between;
   justify-items: center;
-  div{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+  border: 1px solid black;
 }
 button{
     border-radius: 1px solid black;
@@ -59,4 +71,12 @@ export const Usuario=styled.div`
    display: flex;
    justify-content: flex-end;
    padding-top: 40px;
+button{
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 0;
+}
 `
+

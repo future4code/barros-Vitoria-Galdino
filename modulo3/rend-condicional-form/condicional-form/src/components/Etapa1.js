@@ -1,6 +1,5 @@
 import React from 'react';
-import {ButtonLogin, Login} from '../style'
-
+import {Login} from '../style'
 
 const Etapa1=()=>{
   
@@ -21,7 +20,6 @@ return (
             <option>Ensino Superior Incompleto</option>
             <option>Ensino Superior Completo</option>
             </select>
-            <ButtonLogin onClick>Próxima Etapa</ButtonLogin>
         </form>
     </Login>
  );

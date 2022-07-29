@@ -1,28 +1,41 @@
 import './App.css';
 
-import React from 'react';
-import Formulario from './components/Formulario.js'
-import Usuario from './components/Usuarios.js'
+import axios from 'axios';
+import React, {useState, useEffect} from 'react';
 
-export default class App extends React.Component {
-    state = {
-    mudaPagina: "informacoes"
-   };
 
-   changePage = () => {
-    if (this.state.mudaPagina === "informacoes" ) {
-      this.setState({mudaPagina: "usuarios"});
-    }else{
-      this.setState({mudaPagina: "informacoes"})
-    }
-  
+  function App() {
+  const [minhaLista, setMinhaLista] = useState([]);
+
+  useEffect(()=>{
+    getAllUsers()
+  }, [])
+
+  const getAllUsers = () => {
+    axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",{
+      headers: {
+        Authorization: 'Vitoria-Galdino-Barros'
+      }
+    }).then((res)=>{
+      console.log(res.data.result.list)
+      setMinhaLista(res.data.result.list)
+    }).catch((er)=>{
+      console.log(er.response)
+    })
+  }
+
   return (
     <div className="App">
-      <button onClick={this.changePage}>Trocar de Tela</button>
-      {this.state.mudaPagina === "Informacoes" ? <Formulario /> : <Usuario/>}
+     {minhaLista.map((lista)=>{
+      return(
+      <li key={lista.id}>{lista.name}</li>
+      )
+     })}
     </div>
   );
- }
-}
+ 
+};
+
+export default App;
 
 

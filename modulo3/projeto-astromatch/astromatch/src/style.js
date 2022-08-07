@@ -9,7 +9,6 @@ export const ContainerCard = styled.div`
  box-shadow: grey 1px 1px 5px;
  width: 90%;
  margin-bottom: 10px;
- /* background-color: blue; */
 `;
 
 export const ProfilePhoto = styled.img`
@@ -17,7 +16,6 @@ export const ProfilePhoto = styled.img`
  height: 45vh;
  box-shadow: grey 1px 1px 5px;
  margin-bottom: 0;
- /* background-color: blue; */
 `;
 
 export const InfoProfile = styled.div`
@@ -25,14 +23,12 @@ export const InfoProfile = styled.div`
  flex-direction: column;
  max-height: 110px;
  font-size: 15px;
- /* background-color: blue; */
  width: 35vh;
 `;
 
 export const Buttons = styled.div`
  display: flex;
  justify-content: space-between;
- /* background-color: blue; */
  width: 30vh;
  margin-top: 0;
  height: 35px;
@@ -89,22 +85,19 @@ export const ContainerMatchList = styled.div`
  box-shadow: grey 1px 1px 5px;
  width: 45vh;
  height: 80vh;
-  /* background-color: pink; */
-  flex-wrap: wrap;
+ flex-wrap: wrap;
 `;
 
 export const ContainerList = styled.div`
  display: flex;
  flex-wrap: wrap;
  flex-direction: row;
- /* background-color: yellow; */
  justify-content: space-around;
  margin: 3px;
  align-items: center;
 `;
 
 export const MatchCard = styled.div`
- /* border: 2px solid black; */
  display: flex;
  align-items: center;
  flex-direction: column;

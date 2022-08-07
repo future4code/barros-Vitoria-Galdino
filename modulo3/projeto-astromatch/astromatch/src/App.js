@@ -1,15 +1,12 @@
 import './App.css';
 
 import React, {useState} from "react";
-import axios from "axios";
 import MatchList from "./Components/MatchList/MatchList";
-import CandidateCard from "./Components/CandidateCard/CandidateCard";
 import styled from "styled-components";
 
 const ContainerGeral = styled.div`
  display: flex;
  align-items: center;
- /*background-color: red; */
  flex-direction: column;
  justify-content: center;
  width: 100vw;
@@ -44,7 +41,6 @@ const ContainerMatchCandidates = styled.div`
  display: flex;
  justify-content: center;
  align-items: center;
- /*background-color: yellow;*/
  width: 45vh;
  height: 85vh;
  flex-direction: column;
@@ -59,7 +55,6 @@ const ContainerButtons = styled.div`
 
 function App() {
   const [currentPage, setCurrentPage] = useState("App");
-  const [profiles, setProfiles] = useState({});
 
   const changePage = () => {
     if(currentPage === "App") {

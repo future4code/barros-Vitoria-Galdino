@@ -4,9 +4,7 @@ import {ContainerCard, ProfilePhoto, InfoProfile, Buttons, ButtonX, ButtonHeart,
 
 export default function CandidateCard() {
     const [profile, setProfile] = useState({});
-    const [userChoice, setUserChoice] = useState(null);
 
-    //mostrar os perfis que podem dar matches
     useEffect(()=>{
         getProfile();
     }, []);
@@ -14,7 +12,7 @@ export default function CandidateCard() {
     const getProfile = () => {
         axios
         .get(
-            "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/vitoria/person"
+            "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/darvas/person"
         ).then((response)=>{
             setProfile(response.data.profile);
         }).catch((error)=>{
@@ -22,14 +20,14 @@ export default function CandidateCard() {
         });
     };
 
-    //se eu der like tem que ver se o usuario tambem deu like:
+   
     const choosePerson = (value) => {
         const body = {
             id: profile.id,
             choice: value,
         };
         axios.post(
-            "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/vitoria/choose-person",
+            "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/darvas/choose-person",
              body
          ).then((response)=>{
             getProfile();
@@ -41,11 +39,11 @@ export default function CandidateCard() {
          });
     };
 
-    // Resetar todos os perfils
+    
     const resetAllProfiles = () => {
         axios
         .put(
-            "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/vitoria/clear"
+            "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/darvas/clear"
         ).then((response)=>{
             getProfile(response);
         }).catch((error)=>{

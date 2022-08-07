@@ -5,11 +5,11 @@ import axios from "axios";
 export default function MatchCandidates() {
     const [matches, setMatches] = useState([]);
 
-    //mostrar a lista de matches
+   
     useEffect(()=>{
         axios
          .get(
-          "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/vitoria/matches"
+          "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/daniel/matches"
         ).then((response)=>{
             setMatches(response.data.matches);
         }).catch((error)=>{

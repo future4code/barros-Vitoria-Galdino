@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useNavigate} from 'react-router-dom';
-import {Button} from '../../style';
+import {Button, Paragrafo} from '../../style';
 
 function AdminHomePage() {
     const navigate = useNavigate();
@@ -19,13 +19,28 @@ function AdminHomePage() {
       navigate("/LoginPage")
     }
 
+    const goToList = () => {
+        navigate("/ListTripsPage")
+    }
+
+    const goToCreate = () => {
+        navigate("/CreateTripPage")
+    }
+
+    const goToTripDetails = () => {
+        navigate("/TripDetailsPage")
+    }
+
    
 
     return(
         <section>
-        <p>Administrador</p>
+        <Paragrafo>Administrador</Paragrafo>
         <Button onClick={goToHome}>Pagina inicial</Button>
         <Button onClick={goToLogin}>Login</Button>
+        <Button onClick={goToList}>Lista de viagens</Button>
+        <Button onClick={goToCreate}>Criar Viagem</Button>
+        <Button onClick={goToTripDetails}>Detalhes Viagem</Button>
         <Button onClick={goToLastPage}>Retornar</Button>
         </section>
     )

@@ -1,10 +1,11 @@
 // Para vermos todas as viagens
 
 import React from 'react';
+import {Paragrafo} from '../../style';
 
 function ListTripsPage() {
     return(
-        <p>Lista de viagens</p>
+        <Paragrafo>Lista de viagens</Paragrafo>
     )
 }
 

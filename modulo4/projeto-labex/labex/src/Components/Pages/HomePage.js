@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
-import {Button} from '../../style.js';
+import {Button, Paragrafo} from '../../style.js';
 
 function HomePage() {
     const navigate = useNavigate()
@@ -21,7 +21,7 @@ function HomePage() {
 
     return(
         <section>
-        <p>Página inicial</p>
+        <Paragrafo>Página inicial</Paragrafo>
         <Button onClick={goToAdminHome}>Administrador</Button>
         <Button onClick={goToListTrip}>Lista De Viagens</Button>
         <Button onClick={goToApplicationForm}>Formulário</Button>

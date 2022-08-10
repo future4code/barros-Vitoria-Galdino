@@ -1,10 +1,11 @@
 // Formulário para o administrador criar uma nova viagem
 
 import React from 'react';
+import {Paragrafo} from '../../style';
 
 function CreateTripPage() {
     return(
-        <p>Criação Viagens</p>
+        <Paragrafo>Criação Viagens</Paragrafo>
     )
 }
 

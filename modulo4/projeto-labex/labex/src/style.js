@@ -12,3 +12,9 @@ export const Button = styled.button`
         cursor: pointer;
     }
 `
+
+export const Paragrafo = styled.p`
+ color: white;
+ font-size: 25px;
+ background-color: blue;
+`

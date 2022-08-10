@@ -8,7 +8,7 @@ function HomePage() {
     const navigate = useNavigate()
 
     const goToAdminHome = () => {
-        navigate("/AdminHomePage")
+        navigate("/AdminHomePage/login")
     }
 
     const goToListTrip = () => {

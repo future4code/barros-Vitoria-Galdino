@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const LoginPage = () => {
+function LoginPage() {
     return(
         <p>Página Login</p>
     )

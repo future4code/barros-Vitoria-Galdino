@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const CreateTripPage = () => {
+function CreateTripPage() {
     return(
         <p>Criação Viagens</p>
     )

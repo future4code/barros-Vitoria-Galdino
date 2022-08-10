@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const TripDetailsPage = () => {
+function TripDetailsPage() {
     return(
         <p>Detalhes Viagem</p>
     )

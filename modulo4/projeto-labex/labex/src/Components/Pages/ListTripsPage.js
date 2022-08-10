@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const ListTripsPage = () => {
+function ListTripsPage() {
     return(
         <p>Lista de viagens</p>
     )

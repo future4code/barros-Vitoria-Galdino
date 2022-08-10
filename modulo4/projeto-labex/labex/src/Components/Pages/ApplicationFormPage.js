@@ -3,7 +3,7 @@
 import React from 'react';
 
 
-const ApplicationFormPage = () => {
+function ApplicationFormPage() {
     return(
         <p>Formulário de aplicação</p>
     )

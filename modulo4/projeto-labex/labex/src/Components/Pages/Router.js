@@ -13,7 +13,7 @@ function Router() {
        <BrowserRouter>
           <Routes>
             <Route index element={ <HomePage/> } />
-            <Route path="Administrador/:login" element={ <AdminHomePage/> } />
+            <Route path="Administrador" element={ <AdminHomePage/> } />
             <Route path="Aplicacao-Formulario" element={ <ApplicationFormPage/> } />
             <Route path="Criar-Viagem" element={ <CreateTripPage/> } />
             <Route path="Lista-Viagem" element={ <ListTripsPage/> } />

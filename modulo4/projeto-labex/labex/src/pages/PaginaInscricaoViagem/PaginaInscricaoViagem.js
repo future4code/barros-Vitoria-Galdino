@@ -86,9 +86,9 @@ const PaginaInscricaoViagem = () => {
                 <label>Profissão</label>
                 <input type={'text'} placeholder={'Profissão'} name={'profissao'} value={form.profissao} onChange={handleInputChange} required></input>
                 <label>País</label>
-                <select type={'text'} placeholder={'País'} name={'pais'} value={form.pais} onChange={handleInputChange}><Countries/></select> 
+                <select type={'text'} placeholder={'País'} name={'pais'} value={form.pais} onChange={handleInputChange}><Countries /></select> 
                 <label>Viagem escolhida:</label>
-                <select placeholder={'Viagem escolhida:'} name={'viagemescolhida'} required value={form.viagemescolhida} onClick={getTrips} onChange={handleInputChange}>{trips.map((trip) => {
+                <select placeholder={'Viagem escolhida:'} name={'viagemescolhida'} value={form.viagemescolhida} onClick={getTrips} onChange={handleInputChange} required>{trips.map((trip) => {
                     return <option value={trip.id}>{trip.name}</option> 
                 })}</select>
                 <Button variant="contained" color="secondary" onClick={onSubmitForm}>Inscrever-se</Button>

@@ -3,7 +3,7 @@ import React from 'react'
 const Countries = () => {
     return(
         <>
-        <option value="Brasil" selected>Brasil</option>
+        <option></option>
         <option value="África do Sul">África do Sul</option>
         <option value="Albânia">Albânia</option>
         <option value="Alemanha">Alemanha</option>
@@ -29,6 +29,7 @@ const Countries = () => {
         <option value="Brunei">Brunei</option>
         <option value="Bulgária">Bulgária</option>
         <option value="Burkina Fasso">Burkina Fasso</option>
+        <option value="Brasil">Brasil</option>
         <option value="botão">botão</option>
         <option value="Cabo Verde">Cabo Verde</option>
         <option value="Camarões">Camarões</option>
@@ -182,3 +183,4 @@ const Countries = () => {
 }
 
 export default Countries;
+

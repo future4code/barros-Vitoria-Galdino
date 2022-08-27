@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import IconButton from '@mui/material/IconButton';
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import ClearIcon from '@mui/icons-material/Clear';
+//import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+//import ClearIcon from '@mui/icons-material/Clear';
 
 const CardDiv = styled.div`
   display: flex;
@@ -42,8 +42,8 @@ const CardCandidato = (props) => {
               <div><strong>Profissão: </strong>{props.candidates.profession}</div>
               <div>{props.candidates.applicationText}</div>
               <Botoes>
-                <IconButton aria-label="aprovar" color="primary" onClick={aprovarCandidato}><CheckCircleOutlineIcon/></IconButton>
-                <IconButton aria-label="rejeitar" color="primary" onClick={rejeitarCandidato}><ClearIcon/></IconButton>
+                <IconButton aria-label="aprovar" color="primary" onClick={aprovarCandidato}>OK</IconButton>
+                <IconButton aria-label="rejeitar" color="primary" onClick={rejeitarCandidato}>X</IconButton>
               </Botoes>
             </CardDiv>
         </div>

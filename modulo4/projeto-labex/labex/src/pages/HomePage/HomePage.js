@@ -25,12 +25,12 @@ const ButtonDiv = styled.div`
     justify-content: space-between;
     width: 35vw;
     z-index: 2;
-    margin-top: -400px;
+    margin-top: -200px;
 `
 const ImgLogo = styled.img`
     display: flex;
     z-index: 2;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     margin-top: -200px;
 `
 

@@ -8,7 +8,7 @@ const CardDiv = styled.div`
   align-items: baseline;
   color: white;
   border-radius: 10px;
-  background-color: rgb(239, 45, 86, 1);
+  background-color: MediumSlateBlue;
   margin-left: 5px;
   margin-right: 5px;
   padding: 10px 20px 20px 20px;

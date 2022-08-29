@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-import galaxy from '../HomePage/img/fundo2.jpg'
+import galaxy from '../HomePage/img/background-galaxy.webp'
 import Button from '@mui/material/Button';
-import logog from '../HomePage/img/labexg.png';
+import logog from '../HomePage/img/LabeX-Fundo.png';
 import useBack from '../../hooks/useBack';
 
 const HomeDiv = styled.div`
@@ -25,11 +25,13 @@ const ButtonDiv = styled.div`
     justify-content: space-between;
     width: 35vw;
     z-index: 2;
+    margin-top: -400px;
 `
 const ImgLogo = styled.img`
     display: flex;
     z-index: 2;
     margin-bottom: 40px;
+    margin-top: -200px;
 `
 
 const HomePage = () => {

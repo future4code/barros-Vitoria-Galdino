@@ -24,11 +24,11 @@ const AreaAdm = () => {
             <h2>Painel Administrativo</h2>
             <BackgroundDiv>        
                     <div class="container">
-                        <img src='https://i.pinimg.com/originals/21/08/6d/21086dbd5783d15f4b4d255ae5bba4b7.jpg'/>
+                        <img src='https://www.spazioinfinito.net/wp-content/uploads/2018/10/allineamento-pianeti-1217.jpg'/>
                         <button class="btn" variant="contained" color="secondary" onClick={useBack('/trips/list')}>Viagens</button>
                     </div>
                     <div class="container">
-                        <img src='https://artfiles.alphacoders.com/526/52646.jpg'/>
+                        <img src='https://4.bp.blogspot.com/-XJnd2_TY8nM/WNPKp_TWA_I/AAAAAAAAP04/as44xby5khshYaDASO1tpI_UpG9uu9ntACLcB/s1600/deus%2Buniv.jpg'/>
                         <button class="btn" variant="contained" color="secondary" onClick={useBack('/trips/create')}>Criar Viagem</button>
                     </div>
             </BackgroundDiv>

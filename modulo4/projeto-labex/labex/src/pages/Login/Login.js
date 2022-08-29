@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import useBack from '../../hooks/useBack';
 import styled from 'styled-components';
-import astronauta from '../Login/img/astronauta.png'
+import astronauta from '../Login/img/astronauta-space.png';
 import Button from '@mui/material/Button';
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
@@ -35,7 +35,7 @@ const ButtonDiv = styled.div`
     margin-top: 20px;
 `
 const ImgAstronauta = styled.img`
-    width: 25%;
+    width: 40%;
     height: auto;
 `
 

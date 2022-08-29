@@ -2,11 +2,13 @@
     position: relative;
     width: 100%;
     max-width: 500px;
+    margin-right: 10px;
   }
   
   .container img {
-    width: 100%;
+    width: 98%;
     height: auto;
+    border-radius: 30px;
   }
   
   .container .btn {

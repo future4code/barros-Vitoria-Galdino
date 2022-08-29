@@ -26,6 +26,8 @@ const Imagem = styled.img`
  width: 200px;
  height: 200px;
  padding-left: 10px;
+ padding-top: 15px;
+ border-radius: 20px;
 `
 
 const ListTripPCard = (props) => {
@@ -37,7 +39,7 @@ const ListTripPCard = (props) => {
               <div><h3><strong>{props.trips.name}</strong></h3></div>
               <div><em>{props.trips.planet}</em></div>
               <div><em>{props.trips.date}</em></div>
-              <Imagem src={`https://acegif.com/wp-content/uploads/gif/outerspace-59.gif`} />
+              <Imagem src={`https://c.tenor.com/FqxEchzG7MYAAAAC/spae-planet.gif`} />
               <br/>
               <div>{props.trips.description}</div>
               <br/>

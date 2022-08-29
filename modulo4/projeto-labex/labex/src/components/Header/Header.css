@@ -1,5 +1,7 @@
 .barra {
     background-color: #20201D;
+    position: relative;
+    height: 5px;
 }
 
 #barra {

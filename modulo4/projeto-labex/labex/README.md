@@ -1,4 +1,4 @@
-# Lick Surge: https://materialistic-wrist.surge.sh/
+# Lick Surge: https://https://determined-plough.surge.sh/
 
 # Getting Started with Create React App
 

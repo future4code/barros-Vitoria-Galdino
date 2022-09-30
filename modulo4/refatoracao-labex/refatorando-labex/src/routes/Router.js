@@ -7,7 +7,6 @@ import LoginPage from '../pages/LoginPage/LoginPage'
 import AdminHomePage from '../pages/AdminHomePage/AdminHomePage'
 import CreateTripPage from '../pages/CreateTripPage/CreateTripPage'
 import TripDetailsPage from '../pages/TripDetailsPage/TripDetailPage'
-import { NotFound } from "../pages/NotFound/NotFound";
 
 const Router = () => {
     return (
@@ -20,7 +19,6 @@ const Router = () => {
                 <Route path="/admin/trips/list" element={<AdminHomePage/>} />
                 <Route path="/admin/trips/create" element={<CreateTripPage/>} />
                 <Route path="/admin/trips/:id" element={<TripDetailsPage/>} />
-                <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     )

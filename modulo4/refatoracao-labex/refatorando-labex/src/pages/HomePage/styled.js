@@ -19,3 +19,4 @@ export const Labex = styled.img`
   margin-top: -120px;
   padding-left: 30px;
 `
+

@@ -22,6 +22,7 @@ const ListTripsPage = () => {
             <h1>Lista de Viagens</h1>
             {tripsList && tripsList.length > 0 ? tripsList : <p>Carregando...</p>}
         </ListScreenContainer>
+       
         
         
     )
